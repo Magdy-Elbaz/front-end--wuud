@@ -1,5 +1,5 @@
-export const baseUrl = `https://back-end-wuud-production.up.railway.app/api`;
-
+export const baseUrl = `http://127.0.0.1:8000/api`;
+// https://back-end-wuud-production.up.railway.app/
 export const REGISTER = "register";
 export const LOGIN = "login";
 // Global
