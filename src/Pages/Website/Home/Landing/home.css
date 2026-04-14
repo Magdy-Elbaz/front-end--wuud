@@ -1,0 +1,107 @@
+.home {
+  position: relative;
+  height: calc(100vh - 92px);
+  background: url(../../../../Assets/home.png) center/cover;
+  z-index: 1;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.page-content {
+  height: calc(100vh - 60px);
+}
+
+.box-sale {
+  border-left: 2px solid #fff;
+}
+
+.pergraph-home {
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .home::before {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .pergraph-home {
+    width: 100%;
+  }
+}
+
+/* Catigories */
+
+.categories-wrapper {
+  background-color: #dfdddd;
+  min-height: calc(100vh - 92px);
+}
+
+.catigory-item {
+  width: 250px;
+}
+
+/* Product */
+.product-item {
+  width: 250px;
+}
+
+.product-item img {
+  height: 200px;
+}
+
+.sale {
+  width: fit-content;
+  top: 20px;
+  left: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    width: 100%;
+  }
+}
+
+/* Offers */
+
+.box-NonSofa {
+  background: url(../../../../Assets/NonSofa.jpg) center/cover no-repeat;
+}
+
+.box-NonSofa,
+.box-ArmChair {
+  height: 350px;
+  width: 640px;
+}
+
+.box-NonSofa p {
+  width: 75%;
+}
+
+.box-NonSofa p,
+.box-ArmChair p {
+  padding-right: 30px;
+}
+
+.box-ArmChair {
+  background: url(../../../../Assets/ArmChair.jpg) center/cover no-repeat;
+}
+
+@media (max-width: 768px) {
+  .box-NonSofa p {
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+
+.top-rated {
+  max-height: 720px;
+}
